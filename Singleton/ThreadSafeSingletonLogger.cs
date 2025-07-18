@@ -1,10 +1,11 @@
-﻿namespace Singleton;
+﻿
+namespace Singleton;
 
 public class ThreadSafeSingletonLogger : SingletonBase
 {
-    private static readonly object threadSafeLock = new object();
+    private static readonly Lock threadSafeLock = new();
 
-    private static ThreadSafeSingletonLogger instance;
+    private static ThreadSafeSingletonLogger? instance;
     private ThreadSafeSingletonLogger() { }
 
 

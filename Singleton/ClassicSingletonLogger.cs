@@ -9,7 +9,9 @@ public class ClassicSingletonLogger : SingletonBase
     public static ClassicSingletonLogger GetInstance()
     {
         if (instance is null)
+        {
             instance = new ClassicSingletonLogger();
+        }
 
         return instance;
     }
