@@ -1,6 +1,6 @@
 ﻿namespace Singleton;
 
-public class ThreadSafeSingletonLogger : SligletonBase
+public class ThreadSafeSingletonLogger : SingletonBase
 {
     private static readonly object threadSafeLock = new object();
 

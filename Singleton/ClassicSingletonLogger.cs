@@ -1,6 +1,6 @@
 ﻿namespace Singleton;
 
-public class ClassicSingletonLogger : SligletonBase
+public class ClassicSingletonLogger : SingletonBase
 {
     private static ClassicSingletonLogger? instance;
 

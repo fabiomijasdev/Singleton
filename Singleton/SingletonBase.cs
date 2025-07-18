@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
-    public abstract class SligletonBase
+    public abstract class SingletonBase
     {
         public static void Log(Exception exception)
         {
