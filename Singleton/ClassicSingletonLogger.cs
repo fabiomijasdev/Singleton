@@ -1,6 +1,6 @@
 ﻿namespace Singleton;
 
-public class ClassicSingletonLogger
+public class ClassicSingletonLogger : SligletonBase
 {
     private static ClassicSingletonLogger? instance;
 
@@ -13,16 +13,4 @@ public class ClassicSingletonLogger
 
         return instance;
     }
-
-    public static void Log(Exception exception)
-    {
-        Console.WriteLine(exception.ToString());
-    }
-
-    public static void Log(string message)
-    {
-        Console.WriteLine(message);
-    }
-
-
 }
